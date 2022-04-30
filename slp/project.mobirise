@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Rental - San Lorenzo Place",
-    "currentPage": "profile.html",
+    "currentPage": "sanlorenzoplace.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -74,7 +74,7 @@
       "settings": {
         "title": "San Lorenzo Place",
         "order": 2,
-        "meta_image": "@PROJECT_PATH@/assets/images/279344837_1168077673966568_584763445900891537_n-2000x1500.jpg"
+        "meta_image": "@PROJECT_PATH@/assets/images/279386205-367761818649335-3374900699423385931-n-1125x750.jpg"
       },
       "components": [
         {
@@ -497,10 +497,12 @@
               "background-color": "@bg-value"
             },
             ".mbr-text, .mbr-section-btn": {
-              "color": "#ff6666"
+              "color": "#ff6666",
+              "text-align": "right"
             },
             ".mbr-section-title": {
-              "color": "#e43f3f"
+              "color": "#e43f3f",
+              "text-align": "right"
             }
           },
           "_name": "header7",
