@@ -3134,6 +3134,47 @@ a {
   color: #9d6f3b;
   text-align: center;
 }
+.cid-td3ac9nx8N {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-td3ac9nx8N .bg-facebook {
+  background: #1778f2;
+  color: #ffffff;
+}
+.cid-td3ac9nx8N .bg-facebook:hover {
+  background: #0b60cb;
+}
+.cid-td3ac9nx8N .bg-twitter {
+  background: #1da1f2;
+  color: #ffffff;
+}
+.cid-td3ac9nx8N .bg-twitter:hover {
+  background: #0c85d0;
+}
+.cid-td3ac9nx8N .bg-instagram {
+  background: #f00075;
+  color: #ffffff;
+}
+.cid-td3ac9nx8N .bg-instagram:hover {
+  background: #bd005c;
+}
+.cid-td3ac9nx8N .iconfont-wrapper {
+  display: inline-block;
+  font-size: 32px;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.cid-td3ac9nx8N [class^="socicon-"]:before,
+.cid-td3ac9nx8N [class*=" socicon-"]:before {
+  line-height: 55px;
+  padding: .6rem;
+}
 .cid-tbEb6ue0J2 {
   z-index: 1000;
   width: 100%;
