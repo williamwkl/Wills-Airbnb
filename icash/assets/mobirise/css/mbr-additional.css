@@ -3756,7 +3756,7 @@ a {
 .cid-tOx8dZcrCn {
   padding-top: 6rem;
   padding-bottom: 5rem;
-  background-color: #ffffff;
+  background-color: #002699;
 }
 .cid-tOx8dZcrCn .card-wrapper {
   display: flex;
@@ -3768,8 +3768,14 @@ a {
 }
 .cid-tOx8dZcrCn .mbr-iconfont {
   font-size: 2rem;
-  color: #6592e6;
+  color: #ffffff;
   padding-right: 1.5rem;
+}
+.cid-tOx8dZcrCn .card-title {
+  color: #ffffff;
+}
+.cid-tOx8dZcrCn .card-text {
+  color: #ffffff;
 }
 .cid-tOx73Upa4g {
   padding-top: 4rem;
