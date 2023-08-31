@@ -2503,14 +2503,14 @@ a {
   padding: 1rem 0;
 }
 .cid-tOwRuWUFgV .panel-title-edit {
-  color: #4479d9;
+  color: #002699;
 }
 .cid-tOwRuWUFgV .card .card-header {
   background-color: transparent;
   margin-bottom: 0;
 }
 .cid-tOwRuWUFgV H3 {
-  color: #4479d9;
+  color: #002699;
 }
 .cid-tOwS4oL8mr {
   padding-top: 0rem;
@@ -2989,10 +2989,20 @@ a {
     margin-bottom: 2rem;
   }
 }
+.cid-tOwWlarWmv .card-title,
+.cid-tOwWlarWmv .card-box {
+  color: #002699;
+}
+.cid-tOwWlarWmv .icon-text {
+  color: #002699;
+}
+.cid-tOwWlarWmv .icon-title {
+  color: #002699;
+}
 .cid-tOwY65rRQY {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #ffffff;
+  background-color: #002699;
 }
 .cid-tOwY65rRQY ul {
   list-style: none;
@@ -3011,6 +3021,12 @@ a {
   font-weight: bold;
   font-size: 2rem;
   width: 1.6rem;
+}
+.cid-tOwY65rRQY .list {
+  color: #ffffff;
+}
+.cid-tOwY65rRQY H3 {
+  color: #ffffff;
 }
 .cid-tOwXtNgEc8 {
   padding-top: 6rem;
@@ -3155,6 +3171,13 @@ a {
   -khtml-user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
+.cid-tOwXtNgEc8 .mbr-section-title {
+  color: #002699;
+}
+.cid-tOwXtNgEc8 .mbr-role,
+.cid-tOwXtNgEc8 .social-row {
+  color: #4479d9;
+}
 .cid-tOwXyXPh55 {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -3298,6 +3321,14 @@ a {
   -khtml-user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
+.cid-tOwXyXPh55 .mbr-role,
+.cid-tOwXyXPh55 .social-row {
+  color: #4479d9;
+}
+.cid-tOwXyXPh55 .card-title,
+.cid-tOwXyXPh55 .social-row {
+  color: #002699;
+}
 .cid-tOwXEN3fwJ {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -3317,6 +3348,12 @@ a {
   .cid-tOwXEN3fwJ .text-wrapper {
     padding: 2rem;
   }
+}
+.cid-tOwXEN3fwJ .mbr-section-subtitle {
+  color: #002699;
+}
+.cid-tOwXEN3fwJ .mbr-text {
+  color: #4479d9;
 }
 .cid-tOwU3eVdXX {
   padding-top: 30px;
@@ -3753,6 +3790,16 @@ a {
 .cid-tOx69LGu54 .row {
   justify-content: center;
 }
+.cid-tOx69LGu54 .mbr-section-title {
+  color: #002699;
+}
+.cid-tOx69LGu54 .card-title,
+.cid-tOx69LGu54 .iconfont-wrapper {
+  color: #002699;
+}
+.cid-tOx69LGu54 .card-text {
+  color: #4479d9;
+}
 .cid-tOx8dZcrCn {
   padding-top: 6rem;
   padding-bottom: 5rem;
@@ -3807,6 +3854,13 @@ a {
 }
 .cid-tOx73Upa4g .row {
   justify-content: center;
+}
+.cid-tOx73Upa4g .card-title,
+.cid-tOx73Upa4g .card-box {
+  color: #002699;
+}
+.cid-tOx73Upa4g H3 {
+  color: #002699;
 }
 .cid-tOx3TVYr1d {
   padding-top: 30px;
