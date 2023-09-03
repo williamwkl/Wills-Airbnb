@@ -688,6 +688,8 @@ a {
 .cid-sFCw1qGFAI {
   z-index: 1000;
   width: 100%;
+  position: relative;
+  min-height: 60px;
 }
 .cid-sFCw1qGFAI nav.navbar {
   position: fixed;
@@ -787,7 +789,7 @@ a {
   min-height: 70px;
   transition: all 0.3s;
   border-bottom: 1px solid transparent;
-  position: absolute;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
   background: #ffffff;
 }
 .cid-sFCw1qGFAI .navbar.opened {
@@ -1036,15 +1038,16 @@ a {
   }
 }
 .cid-tOOuRlpQ7o {
-  background-image: url("../../../assets/images/mbr-15.jpg");
+  background-image: url("../../../assets/images/372383019-959280738485193-6316218808330868693-n.png");
 }
 .cid-tOOuRlpQ7o .mbr-text,
 .cid-tOOuRlpQ7o .mbr-section-btn {
-  color: #4479d9;
+  color: #000000;
   text-align: center;
 }
 .cid-tOOuRlpQ7o .mbr-section-title {
   text-align: center;
+  color: #42d1ab;
 }
 .cid-sFzyUE9AaP {
   padding-top: 8rem;
@@ -1418,6 +1421,8 @@ a {
 .cid-tNu4Va5aoP {
   z-index: 1000;
   width: 100%;
+  position: relative;
+  min-height: 60px;
 }
 .cid-tNu4Va5aoP nav.navbar {
   position: fixed;
@@ -1517,7 +1522,7 @@ a {
   min-height: 70px;
   transition: all 0.3s;
   border-bottom: 1px solid transparent;
-  position: absolute;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
   background: #ffffff;
 }
 .cid-tNu4Va5aoP .navbar.opened {
@@ -1902,6 +1907,8 @@ a {
 .cid-tNu3wGUtVe {
   z-index: 1000;
   width: 100%;
+  position: relative;
+  min-height: 60px;
 }
 .cid-tNu3wGUtVe nav.navbar {
   position: fixed;
@@ -2001,7 +2008,7 @@ a {
   min-height: 70px;
   transition: all 0.3s;
   border-bottom: 1px solid transparent;
-  position: absolute;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
   background: #ffffff;
 }
 .cid-tNu3wGUtVe .navbar.opened {
@@ -2408,6 +2415,8 @@ a {
 .cid-tNu52VfcxA {
   z-index: 1000;
   width: 100%;
+  position: relative;
+  min-height: 60px;
 }
 .cid-tNu52VfcxA nav.navbar {
   position: fixed;
@@ -2507,7 +2516,7 @@ a {
   min-height: 70px;
   transition: all 0.3s;
   border-bottom: 1px solid transparent;
-  position: absolute;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
   background: #ffffff;
 }
 .cid-tNu52VfcxA .navbar.opened {
