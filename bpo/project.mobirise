@@ -497,12 +497,12 @@
               "background-color": "@bg-value"
             },
             ".mbr-text, .mbr-section-btn": {
-              "color": "#42d1ab",
+              "color": "#000000",
               "text-align": "center"
             },
             ".mbr-section-title": {
               "text-align": "center",
-              "color": "#329beb"
+              "color": "#000000"
             }
           },
           "_name": "header1",
