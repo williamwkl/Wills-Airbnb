@@ -1318,7 +1318,7 @@ a {
 }
 .cid-tOwHsVg5vn .dropdown-menu,
 .cid-tOwHsVg5vn .navbar.opened {
-  background: #ffffff !important;
+  background: #52659f !important;
 }
 .cid-tOwHsVg5vn .nav-item:focus,
 .cid-tOwHsVg5vn .nav-link:focus {
@@ -1353,7 +1353,7 @@ a {
   transition: all 0.3s;
   border-bottom: 1px solid transparent;
   position: absolute;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(82, 101, 159, 0.3);
 }
 .cid-tOwHsVg5vn .navbar.opened {
   transition: all 0.3s;
@@ -1498,7 +1498,7 @@ a {
   padding: 0.667em 1.667em;
 }
 .cid-tOwHsVg5vn .navbar.navbar-expand-lg .dropdown .dropdown-menu {
-  background: #ffffff;
+  background: #52659f;
 }
 .cid-tOwHsVg5vn .navbar.navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
   margin: 0;
@@ -1529,7 +1529,7 @@ a {
   width: 30px;
   height: 2px;
   border-right: 5px;
-  background-color: #002083;
+  background-color: #e8cd00;
 }
 .cid-tOwHsVg5vn button.navbar-toggler .hamburger span:nth-child(1) {
   top: 0;
