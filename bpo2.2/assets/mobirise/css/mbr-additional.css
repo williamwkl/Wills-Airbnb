@@ -1760,36 +1760,114 @@ a {
   position: absolute;
   top: 0;
 }
-.cid-tQTN4n5RxM {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: #ffffff;
+.cid-tQTONwVvyi {
+  background-color: #42d1ab;
 }
-.cid-tQTN4n5RxM .mbr-overlay {
-  background-color: #ffffff;
-  opacity: 0.4;
-}
-.cid-tQTN4n5RxM form.mbr-form {
-  border-radius: 10px;
-  background-color: #fafafa;
-}
-@media (min-width: 992px) {
-  .cid-tQTN4n5RxM form.mbr-form {
-    padding: 2rem;
-  }
+.cid-tQTONwVvyi .mbr-text,
+.cid-tQTONwVvyi .mbr-section-btn {
+  color: #232323;
 }
 @media (max-width: 991px) {
-  .cid-tQTN4n5RxM form.mbr-form {
+  .cid-tQTONwVvyi .mbr-text,
+  .cid-tQTONwVvyi .mbr-section-title {
+    text-align: center;
+  }
+}
+.cid-tQTONwVvyi a.btn {
+  height: 100%;
+  margin: 0;
+}
+.cid-tQTONwVvyi .mbr-section-btn {
+  display: flex;
+  margin-bottom: 1.2rem;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+.cid-tQTONwVvyi .mbr-section-btn .btn {
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .cid-tQTONwVvyi .image-wrapper {
+    margin-bottom: 2rem;
+  }
+  .cid-tQTONwVvyi .content-wrapper {
+    flex-direction: column-reverse;
+  }
+}
+.cid-tQTONwVvyi .justify-content-center {
+  align-items: center;
+}
+.cid-tQTONwVvyi .container {
+  padding: 0 5%;
+}
+.cid-tQTONwVvyi .content-wrapper {
+  background: #42d1ab;
+  border-radius: 25px;
+  padding: 6.5rem;
+}
+@media (max-width: 768px) {
+  .cid-tQTONwVvyi .content-wrapper {
+    padding: 2.5rem;
+  }
+}
+@media (max-width: 425px) {
+  .cid-tQTONwVvyi .content-wrapper {
     padding: 1rem;
   }
 }
-.cid-tQTN4n5RxM form.mbr-form .mbr-section-btn {
-  text-align: center;
-  margin-bottom: 1.2rem;
+.cid-tQTONwVvyi .form-group {
+  margin-bottom: 1.5rem;
 }
-.cid-tQTN4n5RxM form.mbr-form .mbr-section-btn .btn {
-  width: 100%;
-  height: 100%;
+.cid-tQTONwVvyi .form-check {
+  margin-left: .5rem;
+}
+.cid-tQTONwVvyi .mbr-text {
+  margin-bottom: 3rem;
+  color: #3a3e5e;
+}
+.cid-tQTONwVvyi .form-check-input:checked {
+  background: #42d1ab;
+  border: none;
+}
+.cid-tQTONwVvyi .btn {
+  width: 280px !important;
+  height: 55px !important;
+  box-shadow: none;
+}
+.cid-tQTONwVvyi .btn:hover {
+  border: none;
+  box-shadow: none;
+}
+@media (max-width: 768px) {
+  .cid-tQTONwVvyi .btn {
+    width: 200px;
+  }
+}
+.cid-tQTONwVvyi .image-wrapper {
+  padding: 1.5rem 0;
+}
+.cid-tQTONwVvyi .image-wrapper img {
+  object-fit: cover;
+  border-radius: 15px;
+}
+.cid-tQTONwVvyi .form-control {
+  box-shadow: none;
+  color: #3a3e5e;
+}
+.cid-tQTONwVvyi .form-check-input {
+  border: none;
+}
+.cid-tQTONwVvyi .mbr-section-title {
+  color: #6870d1;
+}
+.cid-tQTONwVvyi .mbr-label {
+  color: #3a3e5e;
+}
+.cid-tQTONwVvyi H1 {
+  color: #6870d1;
+}
+.cid-tQTONwVvyi LABEL {
+  color: #ffffff;
 }
 .cid-tQpwoLdazn {
   padding-top: 2rem;

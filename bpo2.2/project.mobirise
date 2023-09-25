@@ -32,13 +32,13 @@
       "nameSelectPreset": "agency",
       "presetSourceTheme": "mobirise5",
       "additionalSetColors": [
+        "#6870d1",
         "#458b79",
         "#192227",
         "#2978b4",
         "#ff2121",
         "#42d1ab",
-        "#329beb",
-        "#90dad8"
+        "#329beb"
       ]
     },
     "path": "@PROJECT_PATH@",
@@ -56,7 +56,7 @@
         "url": "https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
       }
     ],
-    "uniqCompNum": 130,
+    "uniqCompNum": 133,
     "versionPublish": "5.6.5",
     "screenshot": "screenshot.png",
     "imageResize": true,
@@ -1358,46 +1358,119 @@
         {
           "alias": false,
           "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            ".mbr-overlay": {
-              "background-color": "@overlayColor",
-              "opacity": "@overlayOpacity"
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
             },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
+            "background-color": "@bgColor",
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#232323"
             },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "form.mbr-form": {
-              "border-radius": "10px",
-              "background-color": "#fafafa",
-              "@media (min-width: 992px)": {
-                "padding": "2rem"
-              },
+            ".mbr-text, .mbr-section-title": {
               "@media (max-width: 991px)": {
-                "padding": "1rem"
-              },
-              ".mbr-section-btn": {
-                "text-align": "center",
-                "margin-bottom": "1.2rem",
-                ".btn": {
-                  "width": "100%",
-                  "height": "100%"
-                }
+                "text-align": "center"
               }
+            },
+            "a.btn": {
+              "height": "100%",
+              "margin": "0"
+            },
+            ".mbr-section-btn": {
+              "display": "flex",
+              "margin-bottom": "1.2rem",
+              "width": "100%",
+              ".btn": {
+                "width": "100%"
+              },
+              "margin-top": "1.5rem"
+            },
+            "@media (max-width: 991px)": {
+              ".image-wrapper": {
+                "margin-bottom": "2rem"
+              },
+              ".content-wrapper": {
+                "flex-direction": "column-reverse"
+              }
+            },
+            ".justify-content-center": {
+              "align-items": "center"
+            },
+            ".container": {
+              "padding": "0 5%"
+            },
+            ".content-wrapper": {
+              "background": "@container",
+              "border-radius": "25px",
+              "padding": "6.5rem",
+              "@media (max-width: 768px)": {
+                "padding": "2.5rem"
+              },
+              "@media (max-width: 425px)": {
+                "padding": "1rem"
+              }
+            },
+            ".form-group": {
+              "margin-bottom": "1.5rem"
+            },
+            ".form-check": {
+              "margin-left": ".5rem"
+            },
+            ".mbr-text": {
+              "margin-bottom": "3rem",
+              "color": "#3a3e5e"
+            },
+            ".form-check-input:checked": {
+              "background": "@check",
+              "border": "none"
+            },
+            ".btn": {
+              "width": "280px !important",
+              "height": "55px !important",
+              "box-shadow": "none",
+              "&:hover": {
+                "border": "none",
+                "box-shadow": "none"
+              },
+              "@media (max-width: 768px)": {
+                "width": "200px"
+              }
+            },
+            ".image-wrapper": {
+              "padding": "1.5rem 0",
+              "img": {
+                "object-fit": "cover",
+                "border-radius": "15px"
+              }
+            },
+            ".form-control": {
+              "box-shadow": "none",
+              "color": "#3a3e5e"
+            },
+            ".form-check-input": {
+              "border": "none"
+            },
+            ".mbr-section-title": {
+              "color": "#6870d1"
+            },
+            ".mbr-label": {
+              "color": "#3a3e5e"
+            },
+            "H1": {
+              "color": "#6870d1"
+            },
+            "LABEL": {
+              "color": "#ffffff"
             }
           },
-          "_name": "form9",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"form9\" group=\"Forms\" plugins=\"formstyler, datepicker\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Title\" name=\"showText\" checked=\"\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected=\"\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"hidden\" name=\"usedRecaptcha\" value=\"false\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"(overlay &amp;&amp; bg.type=='image')\"></div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"mbr-section-head\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                <b>Subscribe to us</b>\n            </h3>\n            <h4 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                Form Subtitle\n            </h4>\n        </div>\n        <div class=\"row justify-content-center mt-4\">\n            <div mbr-form=\"\" class=\"col-lg-8 mx-auto mbr-form\">\n                <form data-verified=\"william_wkl@yahoo.com\" action=\"\" name=\"Form Name\" method=\"POST\" class=\"mbr-form form-with-styler mx-auto\">\n                    <div class=\"row\">\n                        <div hidden=\"hidden\" data-form-alert=\"\" class=\"alert alert-success col-12\">Thanks for filling out the form!</div>\n                        <div hidden=\"hidden\" data-form-alert-danger=\"\" class=\"alert alert-danger col-12\">Oops...! some problem!</div>\n                    </div>\n                    <div class=\"dragArea row\">\n                        <div class=\"col-lg-12\">\n                            <p mbr-theme-style=\"display-7\" mbr-if=\"showText\" class=\"mbr-text mbr-fonts-style align-center mb-4\"> Exclusive offers in your inbox</p>\n                        </div>\n                        <div class=\"col-lg-4 col-md-12 col-sm-12 form-group mb-3\" data-for=\"name\">\n                            <input type=\"text\" name=\"name\" placeholder=\"Name\" data-form-field=\"name\" class=\"form-control\" value=\"\">\n                        </div>\n                        <div data-for=\"email\" class=\"col-lg-4 col-md-12 col-sm-12 form-group mb-3\">\n                            <input type=\"email\" name=\"email\" placeholder=\"Email\" data-form-field=\"email\" class=\"form-control\" value=\"\">\n                        </div>\n                        <div class=\"col-lg-4 col-md-12 col-sm-12 mbr-section-btn align-center\" mbr-buttons=\"true\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove,-mbrLink,-mbrBtnRemove,-mbrBtnAdd\">\n                            <a data-toolbar=\"-mbrBtnMove,-mbrLink,-mbrBtnRemove,-mbrBtnAdd\" type=\"submit\" class=\"btn btn-primary\">Submit</a>\n                        </div>\n                    </div>\n                </form>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "tQTN4n5RxM",
+          "_name": "form1",
+          "_sourceTheme": "refreshm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"form1\" group=\"Form\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\" plugins=\"formstyler, datepicker\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"color\" name=\"container\" title=\"Container\" value=\"#42d1ab\" selected>\n        <input type=\"color\" name=\"check\" title=\"Check\" value=\"#42d1ab\" selected>\n        <header>Background</header>\n        <input type=\"color\" name=\"bgColor\" title=\"Color\" value=\"#42d1ab\" selected>\n        <input type=\"hidden\" name=\"usedRecaptcha\" value=\"false\"></mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row content-wrapper justify-content-center\">\n            <div mbr-form class=\"col-lg-6 mbr-form\">\n<!--Formbuilder Form-->\n<form action=\"william_wkl@yahoo.com\" name=\"Site Form\" method=\"POST\" class=\"mbr-form form-with-styler\">\n<div class=\"row\">\n<div hidden=\"hidden\" data-form-alert class=\"alert alert-success col-12\">Thanks for reaching out us! Our team will contact you as soon as we can.</div>\n<div hidden=\"hidden\" data-form-alert-danger class=\"alert alert-danger col-12\">Oops...! some problem!</div>\n</div>\n<div class=\"dragArea row\">\n<div class=\"col-lg-12 col-md-12 col-sm-12\">\n<h1 mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" class=\"mbr-section-title mbr-fonts-style\"> Contact Us </h1>\n</div>\n<div class=\"col-lg-12 col-md-12 col-sm-12\">\n<p mbr-theme-style=\"display-7\" mbr-if=\"showText\" class=\"mbr-text mbr-fonts-style\">Shoot us a message and we will be happy to reach out to you as soon as we can!</p>\n</div>\n<div data-for=\"Name\" class=\"col-lg-6 col-md-12 col-sm-12 form-group\">\n<label mbr-text mbr-theme-style=\"display-7\" for=\"Name\" class=\"form-control-label mbr-fonts-style\">Label</label>\n<input type=\"text\" name=\"Name\" placeholder=\"John Smith\" data-form-field=\"Name\" mbr-theme-style=\"display-7\" class=\"form-control\" required=\"required\" value>\n</div>\n<div data-for=\"Email\" class=\"col-lg-6 col-md-12 col-sm-12 form-group\">\n<label mbr-text mbr-theme-style=\"display-7\" for=\"Email\" class=\"form-control-label mbr-fonts-style\">Label</label>\n<input type=\"email\" name=\"Email\" placeholder=\"kampicloud@youremail.com\" data-form-field=\"Email\" mbr-theme-style=\"display-7\" class=\"form-control\" required=\"required\" value>\n</div>\n<div class=\"col-lg-6 col-md-12 col-sm-12 form-group\">\n<div class=\"form-control-label\">\n<label mbr-text mbr-theme-style=\"display-7\" for=\"Email Marketing\" class=\"mbr-fonts-style\">Interested Services</label>\n</div>\n<div data-for=\"Lead Generation\" class=\"form-check ms-2\">\n<input type=\"checkbox\" value=\"Yes\" name=\"Lead Generation\" data-form-field=\"Lead Generation\" mbr-theme-style=\"display-7\" class=\"form-check-input\">\n<label mbr-text for=\"Lead Generation\" mbr-theme-style=\"display-7\" class=\"form-check-label\">Lead Generation</label>\n</div>\n<div data-for=\"Google My Business Ranking\" class=\"form-check ms-2\">\n<input type=\"checkbox\" value=\"Yes\" name=\"Google My Business Ranking\" data-form-field=\"Google My Business Ranking\" mbr-theme-style=\"display-7\" class=\"form-check-input\">\n<label mbr-text for=\"Google My Business Ranking\" mbr-theme-style=\"display-7\" class=\"form-check-label\">Google My Business Ranking</label>\n</div>\n<div data-for=\"Auto & Home Leads\" class=\"form-check ms-2\">\n<input type=\"checkbox\" value=\"Yes\" name=\"Auto & Home Leads\" data-form-field=\"Auto & Home Leads\" mbr-theme-style=\"display-7\" class=\"form-check-input\">\n<label mbr-text for=\"Auto & Home Leads\" mbr-theme-style=\"display-7\" class=\"form-check-label\">Auto &amp; Home Leads</label>\n</div>\n<div data-for=\"Website Development\" class=\"form-check ms-2\">\n<input type=\"checkbox\" value=\"Yes\" name=\"Website Development\" data-form-field=\"Website Development\" mbr-theme-style=\"display-7\" class=\"form-check-input\">\n<label mbr-text for=\"Website Development\" mbr-theme-style=\"display-7\" class=\"form-check-label\">Website Development</label>\n</div>\n<div data-for=\"Virtual Assistants\" class=\"form-check ms-2\">\n<input type=\"checkbox\" value=\"Yes\" name=\"Virtual Assistants\" data-form-field=\"Virtual Assistants\" mbr-theme-style=\"display-7\" class=\"form-check-input\">\n<label mbr-text for=\"Virtual Assistants\" mbr-theme-style=\"display-7\" class=\"form-check-label\">Virtual Assistants</label>\n</div>\n<div data-for=\"Email Marketing\" class=\"form-check ms-2\">\n<input type=\"checkbox\" value=\"Yes\" name=\"Email Marketing\" data-form-field=\"Email Marketing\" mbr-theme-style=\"display-7\" class=\"form-check-input\">\n<label mbr-text for=\"Email Marketing\" mbr-theme-style=\"display-7\" class=\"form-check-label\">Email Marketing</label>\n</div>\n</div>\n<div class=\"col-lg-6 col-md-12 col-sm-12 form-group\">\n<div class=\"form-control-label\">\n<label mbr-text mbr-theme-style=\"display-7\" for=\"White Labelling\" class=\"mbr-fonts-style\">\n</label>\n</div>\n<div data-for=\"Agency MVP Support\" class=\"form-check ms-2\">\n<input type=\"checkbox\" value=\"Yes\" name=\"Agency MVP Support\" data-form-field=\"Agency MVP Support\" mbr-theme-style=\"display-7\" class=\"form-check-input\">\n<label mbr-text for=\"Agency MVP Support\" mbr-theme-style=\"display-7\" class=\"form-check-label\">Agency MVP Support</label>\n</div>\n<div data-for=\"BPO Services\" class=\"form-check ms-2\">\n<input type=\"checkbox\" value=\"Yes\" name=\"BPO Services\" data-form-field=\"BPO Services\" mbr-theme-style=\"display-7\" class=\"form-check-input\">\n<label mbr-text for=\"BPO Services\" mbr-theme-style=\"display-7\" class=\"form-check-label\">BPO Services</label>\n</div>\n<div data-for=\"Call Centre\" class=\"form-check ms-2\">\n<input type=\"checkbox\" value=\"Yes\" name=\"Call Centre\" data-form-field=\"Call Centre\" mbr-theme-style=\"display-7\" class=\"form-check-input\">\n<label mbr-text for=\"Call Centre\" mbr-theme-style=\"display-7\" class=\"form-check-label\">Call Centre</label>\n</div>\n<div data-for=\"Removing Negative Reviews\" class=\"form-check ms-2\">\n<input type=\"checkbox\" value=\"Yes\" name=\"Removing Negative Reviews\" data-form-field=\"Removing Negative Reviews\" mbr-theme-style=\"display-7\" class=\"form-check-input\">\n<label mbr-text for=\"Removing Negative Reviews\" mbr-theme-style=\"display-7\" class=\"form-check-label\">Removing Negative Reviews</label>\n</div>\n<div data-for=\"Search Engine Optimization\" class=\"form-check ms-2\">\n<input type=\"checkbox\" value=\"Yes\" name=\"Search Engine Optimization\" data-form-field=\"Search Engine Optimization\" mbr-theme-style=\"display-7\" class=\"form-check-input\">\n<label mbr-text for=\"Search Engine Optimization\" mbr-theme-style=\"display-7\" class=\"form-check-label\">Search Engine Optimization</label>\n</div>\n<div data-for=\"White Labelling\" class=\"form-check ms-2\">\n<input type=\"checkbox\" value=\"Yes\" name=\"White Labelling\" data-form-field=\"White Labelling\" mbr-theme-style=\"display-7\" class=\"form-check-input\">\n<label mbr-text for=\"White Labelling\" mbr-theme-style=\"display-7\" class=\"form-check-label\">White Labelling</label>\n</div>\n</div>\n<div class=\"col-lg-12 col-md-12 col-sm-12 form-group\" data-for=\"textarea\">\n<label mbr-text mbr-theme-style=\"display-7\" for=\"textarea\" class=\"form-control-label mbr-fonts-style\">Message</label>\n<textarea name=\"textarea\" placeholder=\"Let know more about your needs.\" data-form-field=\"textarea\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control\"></textarea>\n</div>\n<div mbr-buttons=\"true\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove,-mbrLink,-mbrBtnRemove,-mbrBtnAdd\" class=\"col-lg-12 col-md-12 col-sm-12 mbr-section-btn\"><a type=\"submit\" class=\"w-100 w-100 w-100 btn btn-success\" data-app-placeholder=\"Type Text\">Send Message</a></div>\n</div>\n</form><!--Formbuilder Form-->\n</div>\n            <div class=\"col-lg-6 col-12\">\n                <div class=\"image-wrapper\">\n                    <img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/mbr-889x590.jpg\" alt=\"Mobirise\">\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tQTONwVvyi",
+          "_anchor": "form1-3o",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "form9-3l"
+          "_params": {}
         },
         {
           "alias": false,
