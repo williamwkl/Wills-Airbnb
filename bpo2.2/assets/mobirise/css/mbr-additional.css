@@ -1665,11 +1665,11 @@ a {
   }
 }
 .cid-tQTVVSIZpE .mbr-section-title {
-  color: #ffffff;
+  color: #232323;
   margin-bottom: 0;
 }
 .cid-tQTVVSIZpE .mbr-section-subtitle {
-  color: #FFFFFF;
+  color: #232323;
   margin-top: 28px;
 }
 @media (max-width: 1399px) {
@@ -1748,8 +1748,8 @@ a {
 }
 .cid-tQTVVSIZpE form .form-control {
   height: 69px;
-  border: 2px solid #FFFFFF !important;
-  background: transparent;
+  border: 2px solid #232323 !important;
+  background: #FFFFFF;
   outline: none !important;
   box-shadow: none !important;
   border-radius: 35px !important;
@@ -1762,19 +1762,19 @@ a {
   transition: .3s;
 }
 .cid-tQTVVSIZpE form .form-control::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
+  color: #232323;
 }
 .cid-tQTVVSIZpE form .form-control::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.5);
+  color: #232323;
 }
 .cid-tQTVVSIZpE form .form-control:-moz-placeholder {
-  color: rgba(255, 255, 255, 0.5);
+  color: #232323;
 }
 .cid-tQTVVSIZpE form .form-control:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
+  color: #232323;
 }
 .cid-tQTVVSIZpE form select {
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: #232323 !important;
 }
 .cid-tQTVVSIZpE form textarea {
   height: 140px !important;
@@ -1783,16 +1783,16 @@ a {
   resize: none;
 }
 .cid-tQTVVSIZpE form textarea::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: #232323 !important;
 }
 .cid-tQTVVSIZpE form textarea::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: #232323 !important;
 }
 .cid-tQTVVSIZpE form textarea:-moz-placeholder {
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: #232323 !important;
 }
 .cid-tQTVVSIZpE form textarea:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: #232323 !important;
 }
 .cid-tQTVVSIZpE form input,
 .cid-tQTVVSIZpE form textarea {
@@ -1802,33 +1802,33 @@ a {
 .cid-tQTVVSIZpE form textarea:active,
 .cid-tQTVVSIZpE form input:focus,
 .cid-tQTVVSIZpE form textarea:focus {
-  background-color: transparent !important;
-  border-color: #FFFFFF !important;
+  background-color: #FFFFFF !important;
+  border-color: #232323 !important;
   outline: none !important;
 }
 .cid-tQTVVSIZpE form input:active::-webkit-input-placeholder,
 .cid-tQTVVSIZpE form textarea:active::-webkit-input-placeholder,
 .cid-tQTVVSIZpE form input:focus::-webkit-input-placeholder,
 .cid-tQTVVSIZpE form textarea:focus::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: #232323 !important;
 }
 .cid-tQTVVSIZpE form input:active::-moz-placeholder,
 .cid-tQTVVSIZpE form textarea:active::-moz-placeholder,
 .cid-tQTVVSIZpE form input:focus::-moz-placeholder,
 .cid-tQTVVSIZpE form textarea:focus::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: #232323 !important;
 }
 .cid-tQTVVSIZpE form input:active:-moz-placeholder,
 .cid-tQTVVSIZpE form textarea:active:-moz-placeholder,
 .cid-tQTVVSIZpE form input:focus:-moz-placeholder,
 .cid-tQTVVSIZpE form textarea:focus:-moz-placeholder {
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: #232323 !important;
 }
 .cid-tQTVVSIZpE form input:active:-ms-input-placeholder,
 .cid-tQTVVSIZpE form textarea:active:-ms-input-placeholder,
 .cid-tQTVVSIZpE form input:focus:-ms-input-placeholder,
 .cid-tQTVVSIZpE form textarea:focus:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: #232323 !important;
 }
 .cid-tQTVVSIZpE form .row {
   flex-wrap: wrap;
@@ -1841,26 +1841,29 @@ a {
 }
 .cid-tQTVVSIZpE form label {
   width: 100%;
-  color: #FFFFFF;
+  color: #232323;
   margin-bottom: 8px;
 }
 .cid-tQTVVSIZpE form .form-check label {
-  color: #FFFFFF;
+  color: #232323;
 }
 .cid-tQTVVSIZpE form .form-check-input {
-  border-color: rgba(255, 255, 255, 0.5) !important;
+  border-color: #232323!important;
   outline: none !important;
   box-shadow: none !important;
-  background-color: transparent !important;
+  background-color: #FFFFFF !important;
 }
 .cid-tQTVVSIZpE form .form-check-input:focus,
 .cid-tQTVVSIZpE form .form-check-input:hover {
   background-color: #FFFFFF !important;
-  border-color: #FFFFFF !important;
+  border-color: #232323 !important;
 }
 .cid-tQTVVSIZpE form .form-check-input:checked {
-  border-color: #FFFFFF !important;
+  border-color: #232323 !important;
   background-color: transparent !important;
+}
+.cid-tQTVVSIZpE LABEL {
+  color: #232323;
 }
 .cid-tQpwQvUXkS {
   padding-top: 5rem;
