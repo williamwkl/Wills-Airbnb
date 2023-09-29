@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Kampi Subscription Plans",
-    "currentPage": "page1.html",
+    "currentPage": "subscriptionplans.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -63,7 +63,7 @@
       "currency": "USD",
       "popupProduct": true
     },
-    "uniqCompNum": 18,
+    "uniqCompNum": 19,
     "versionPublish": "5.6.5",
     "screenshot": "screenshot.png",
     "chatbutton": false
@@ -711,6 +711,197 @@
           },
           "_cid": "tRcmtvvZ7C",
           "_anchor": "pricing-tables1-8",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_name": "pricing-tables1",
+          "_sourceTheme": "cleanm4",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value",
+              "& when (@isGradientBg)": {
+                "background": "linear-gradient(45deg, @bg-value, @color2)"
+              }
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".head_info": {
+              "text-align": "center",
+              "margin-bottom": "61px",
+              ".mbr-section-title": {
+                "margin-bottom": "20px",
+                "color": "@primaryColor"
+              },
+              ".mbr-subtitle": {
+                "color": "@secondaryColor",
+                "margin-bottom": "10px"
+              },
+              ".mbr-section-text": {
+                "margin-top": "20px",
+                "margin-bottom": "0",
+                "color": "@infoColor"
+              }
+            },
+            ".plan": {
+              "position": "relative",
+              "max-width": "330px",
+              "padding-right": "0",
+              "padding-left": "0",
+              "background-color": "@CardBg",
+              "text-align": "center",
+              "border-radius": "8px",
+              "padding": "42px 15px 55px",
+              ".plan-title": {
+                "color": "@primaryColor",
+                "margin-bottom": "32px"
+              },
+              ".icon_box": {
+                "display": "block",
+                "text-align": "center",
+                "padding-bottom": "17.5px",
+                ".ico1": {
+                  "font-size": "79.5px",
+                  "display": "block",
+                  "position": "relative",
+                  "color": "@secondaryColor"
+                }
+              },
+              ".plan-price": {
+                ".mbr-text": {
+                  "color": "@primaryColor",
+                  "margin-bottom": "0"
+                }
+              },
+              ".plan-list": {
+                "margin-bottom": "15px",
+                ".list-group": {
+                  "&-item": {
+                    "position": "relative",
+                    "justify-content": "center",
+                    "border": "0",
+                    "background": "transparent",
+                    "padding": "5px 0",
+                    "&:before": {
+                      "& when (@showCounter)": {
+                        "color": "@counterColor",
+                        "display": "inline-block",
+                        "content": "\"✓\"",
+                        "text-align": "center",
+                        "transition": "all 0.2s",
+                        "width": "25px",
+                        "height": "25px"
+                      }
+                    },
+                    "&:last-child": {
+                      "border-radius": "8px"
+                    }
+                  },
+                  "color": "@infoColor"
+                }
+              },
+              ".mbr-section-btn": {
+                "margin-top": "17.5px",
+                "margin-bottom": "42px",
+                ".btn": {
+                  "display": "-webkit-inline-flex",
+                  "align-items": "center",
+                  "-webkit-align-items": "center",
+                  "position": "relative",
+                  "overflow": "hidden",
+                  "&::after": {
+                    "background-color": "#656565",
+                    "content": "\"\"",
+                    "height": "150px",
+                    "left": "-75px",
+                    "position": "absolute",
+                    "top": "-60px",
+                    "transform": "rotate(35deg)",
+                    "transition": "all 1.5s cubic-bezier(0.19, 1, 0.22, 1)",
+                    "width": "40px",
+                    "opacity": "0",
+                    "outline": "none",
+                    "text-decoration": "none"
+                  },
+                  "&:hover": {
+                    "&::after": {
+                      "left": "250px",
+                      "opacity": "0.8"
+                    }
+                  }
+                },
+                ".btn-primary": {
+                  "&:hover": {
+                    "background-color": "#28303f !important",
+                    "color": "@successColor !important"
+                  }
+                }
+              },
+              "&:hover": {
+                ".mbr-iconfont": {
+                  "-webkit-animation-name": "pulse-shrink",
+                  "animation-name": "pulse-shrink",
+                  "-webkit-animation-duration": ".35s",
+                  "animation-duration": ".35s",
+                  "-webkit-animation-timing-function": "linear",
+                  "animation-timing-function": "linear",
+                  "-webkit-animation-iteration-count": "infinite",
+                  "animation-iteration-count": "infinite",
+                  "-webkit-animation-direction": "alternate",
+                  "animation-direction": "alternate"
+                }
+              }
+            },
+            "@-webkit-keyframes pulse-shrink": {
+              "to": {
+                "transform": "scale(0.9)"
+              }
+            },
+            "@keyframes pulse-shrink": {
+              "to": {
+                "transform": "scale(0.9)"
+              }
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".head_info .mbr-section-title": {
+              "color": "#2978b4"
+            },
+            ".plan .plan-title": {
+              "color": "#ffffff"
+            },
+            ".plan .plan-list .list-group, .mbr-section-btn": {
+              "color": "#ffffff"
+            },
+            ".plan .plan-price .mbr-text": {
+              "color": "#ffffff"
+            },
+            ".head_info .mbr-subtitle": {
+              "color": "#232323"
+            }
+          },
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"pricing-table1 cleanm4_pricing-table1\" group=\"Pricing Tables\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-parallax-background':bg.parallax, 'mbr-fullscreen': fullScreen}\">\n\n\t<mbr-parameters>\n\t\t\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input inline type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\" condition=\"!fullScreen\">\n\t\t<input inline type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"!fullScreen\">\n\t\t<select title=\"Items Count\" name=\"itemsCount\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\" selected>3</option>\n\t\t\t<option value=\"4\">4</option>\n\t\t</select>\n\t\t<header>Show / Hide</header>\n\t\t<input type=\"checkbox\" title=\"Main Title\" name=\"showMainTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\">\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n\t\t<input type=\"checkbox\" title=\"Price\" name=\"showPrice\" checked>\n\t\t<input type=\"checkbox\" title=\"Check Mark\" name=\"showCounter\">\n\t\t<input type=\"color\" title=\"Check Mark Color\" name=\"counterColor\" value=\"#ffffff\" condition=\"showCounter\">\n\t\t<input type=\"color\" title=\"Card Color\" name=\"CardBg\" value=\"#42d1ab\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n\t\t</fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\n\t\t<input type=\"checkbox\" title=\"Gradient Bg\" name=\"isGradientBg\" checked>\n\t\t<input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#ffffff\" condition=\"bg.type=='color' && isGradientBg\" selected>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&&bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay&&bg.type !== 'color'\">\n\t\t\n\t</mbr-parameters>\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\n\t<div class=\"container\">\n\t\t<div class=\"head_info\">\n\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-bold\" data-app-selector=\".head_info .mbr-section-title\" mbr-if=\"showMainTitle\" mbr-theme-style=\"display-2\">No Extra Hidden Charges! <br>\n\t\t\t\tChoose Your Plan</h1>\n\t\t\t<h2 class=\"mbr-subtitle mbr-fonts-style mbr-semibold\" data-app-selector=\".head_info .mbr-subtitle\" mbr-if=\"showSubtitle\" mbr-theme-style=\"display-4\">OUR PRICING PLANS</h2>\n\t\t\t<p class=\"mbr-section-text mbr-fonts-style mbr-regular\" data-app-selector=\".head_info .mbr-section-text\" mbr-if=\"showText\" mbr-theme-style=\"display-7\">\n\t\t\t\tCondimentum vitae sapien pellentesque habitant morbi tristique senectus.\n\t\t\t\tNibh cras pulvinar mattis nunc.</p>\n\t\t</div>\n\n\t\t<div class=\"media-container-row\">\n\n\t\t\t<div class=\"plan col-12 mx-3 my-2 justify-content-center\" mbr-if=\"itemsCount > 0\" mbr-class=\"{\n                'col-lg-4': itemsCount == 3,\n                'col-lg-6': itemsCount == 2,\n                'col-lg-3': itemsCount == 4}\">\n\n\t\t\t\t<h3 class=\"mbr-fonts-style mbr-semibold plan-title\" mbr-theme-style=\"display-5\" data-app-selector=\".plan .plan-title\">\n\t\t\t\t\tBasic Part-time</h3>\n\t\t\t\t<div class=\"icon_box\">\n\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont ico1 icon54-v3-rocket-backpack\" style=\"color: rgb(255, 255, 255); fill: rgb(255, 255, 255);\"></span>\n\t\t\t\t</div>\n\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" data-app-selector=\".plan .mbr-section-btn .btn\"><a href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_xclick-subscriptions&item_name=Kampi%20Cloud%20Plan%3A%20Basic&item_number=Kampi%20Cloud%20Plan%3A%20Full-Time&currency_code=USD&a3=1&p3=12&t3=M&src=1\" class=\"btn btn-lg btn-info\" data-app-selector=\".plan .mbr-section-btn .btn\" data-app-placeholder=\"Type Text\" target=\"_blank\">Subscribe</a></div>\n\t\t\t\t<div class=\"plan-list align-center\">\n\t\t\t\t\t<ul mbr-text class=\"mbr-fonts-style mbr-regular list-group list-group-flush\" mbr-theme-style=\"display-4\" data-app-selector=\".plan .plan-list .list-group, .mbr-section-btn\">\n\t\t\t\t\t\t<li class=\"list-group-item\">Inbound Calls</li>\n\t\t\t\t\t\t<li class=\"list-group-item\">\n\t\t\t\t\t\t\tAdmin Work</li>\n\t\t\t\t\t\t<li class=\"list-group-item\">&nbsp;Client Transfers</li>\n\t\t\t\t\t\t<li class=\"list-group-item\">\n\t\t\t\t\t\t\t20 Hours/week</li><br><br><li class=\"list-group-item\"><br></li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"plan-price px-3\" condition=\"showPrice\">\n\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-bold\" data-app-selector=\".plan .plan-price .mbr-text\" mbr-if=\"showPrice\" mbr-theme-style=\"display-2\">\n\t\t\t\t\t\t$995</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"plan col-12 mx-3 my-2 justify-content-center\" mbr-if=\"itemsCount > 1\" mbr-class=\"{\n                'col-lg-4': itemsCount == 3,\n                'col-lg-6': itemsCount == 2,\n                'col-lg-3': itemsCount == 4}\">\n\t\t\t\t<h3 class=\"mbr-fonts-style mbr-semibold plan-title\" mbr-theme-style=\"display-5\" data-app-selector=\".plan .plan-title\">Premium Part-time</h3>\n\t\t\t\t<div class=\"icon_box\">\n\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont ico1 icon54-v3-rocket-boost\" style=\"color: rgb(255, 255, 255); fill: rgb(255, 255, 255);\"></span>\n\t\t\t\t</div>\n\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_xclick-subscriptions&item_name=Kampi%20Cloud%20Plan%3A%20Premium&item_number=Kampi%20Cloud%20Plan%3A%20Full-Time&currency_code=USD&a3=1&p3=24&t3=M&src=1\" class=\"btn btn-lg btn-info\" data-app-placeholder=\"Type Text\" target=\"_blank\">Subscribe</a></div>\n\t\t\t\t<div class=\"plan-list align-center\">\n\t\t\t\t\t<ul mbr-text class=\"mbr-fonts-style mbr-regular list-group list-group-flush\" mbr-theme-style=\"display-4\" data-app-selector=\".plan .plan-list .list-group, .mbr-section-btn\">\n\t\t\t\t\t\t<li class=\"list-group-item\">Inbound Calls\n</li><li class=\"list-group-item\">&nbsp;Admin Work\n</li><li class=\"list-group-item\">&nbsp;Client Transfers\n</li><li class=\"list-group-item\">&nbsp;25 Hours/week</li><li class=\"list-group-item\"><b>FREE </b>Social Media Content Management (Weekly Content Posting)</li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"plan-price px-3\" condition=\"showPrice\">\n\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-bold\" data-app-selector=\".plan .plan-price .mbr-text\" mbr-if=\"showPrice\" mbr-theme-style=\"display-2\">\n\t\t\t\t\t\t$1,155</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"plan col-12 mx-3 my-2 justify-content-center\" mbr-if=\"itemsCount > 2\" mbr-class=\"{\n                'col-lg-4': itemsCount == 3,\n                'col-lg-6': itemsCount == 2,\n                'col-lg-3': itemsCount == 4}\">\n\t\t\t\t<h3 class=\"mbr-fonts-style mbr-semibold plan-title\" mbr-theme-style=\"display-5\" data-app-selector=\".plan .plan-title\">\n\t\t\t\t\tFull-Time</h3>\n\t\t\t\t<div class=\"icon_box\">\n\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont ico1 icon54-v3-rocket-launch\" style=\"color: rgb(255, 255, 255); fill: rgb(255, 255, 255);\"></span>\n\t\t\t\t</div>\n\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_xclick-subscriptions&item_name=Kampi%20Cloud%20Plan%3A%20Full-Time&item_number=Kampi%20Cloud%20Plan%3A%20Full-Time&currency_code=USD&a3=1&p3=60&t3=M&src=1\" class=\"btn btn-lg btn-info\" data-app-selector=\".plan .mbr-section-btn .btn\" data-app-placeholder=\"Type Text\" target=\"_blank\">Subscribe</a></div>\n\t\t\t\t<div class=\"plan-list align-center\">\n\t\t\t\t\t<ul mbr-text class=\"mbr-fonts-style mbr-regular list-group list-group-flush\" mbr-theme-style=\"display-4\" data-app-selector=\".plan .plan-list .list-group, .mbr-section-btn\">\n\t\t\t\t\t\t<li class=\"list-group-item\">Inbound Calls\n</li><li class=\"list-group-item\">&nbsp;Admin Work\n</li><li class=\"list-group-item\">&nbsp;Client Transfers\n</li><li class=\"list-group-item\">&nbsp;40 Hours/week\n</li><li class=\"list-group-item\"><b>FREE </b>Social Media Content Management (Weekly Content Posting)</li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"plan-price px-3\" condition=\"showPrice\">\n\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-bold\" data-app-selector=\".plan .plan-price .mbr-text\" mbr-if=\"showPrice\" mbr-theme-style=\"display-2\">\n\t\t\t\t\t\t$1,751</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"plan col-12 mx-3 my-2 justify-content-center\" mbr-if=\"itemsCount > 3\" mbr-class=\"{\n                'col-lg-4': itemsCount == 3,\n                'col-lg-6': itemsCount == 2,\n                'col-lg-3': itemsCount == 4}\">\n\t\t\t\t<h3 class=\"mbr-fonts-style mbr-semibold plan-title\" mbr-theme-style=\"display-5\" data-app-selector=\".plan .plan-title\">\n\t\t\t\t\tUltimate\n\t\t\t\t</h3>\n\t\t\t\t<div class=\"icon_box\">\n\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont ico1 mbri-gift\"></span>\n\t\t\t\t</div>\n\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n\t\t\t\t\t<a href=\"https://mobiri.se\" class=\"btn btn-warning btn-lg\" data-app-selector=\".plan .mbr-section-btn .btn\">Book Now</a>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"plan-price px-3\" condition=\"showPrice\">\n\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-bold\" data-app-selector=\".plan .plan-price .mbr-text\" mbr-if=\"showPrice\" mbr-theme-style=\"display-2\">\n\t\t\t\t\t\t$105.00</p>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"plan-list align-center\">\n\t\t\t\t\t<ul mbr-text class=\"mbr-fonts-style mbr-regular list-group list-group-flush \" mbr-theme-style=\"display-4\" data-app-selector=\".plan .plan-list .list-group, .mbr-section-btn\">\n\t\t\t\t\t\t<li class=\"list-group-item\">\n\t\t\t\t\t\t\tSkin rejuvenation\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li class=\"list-group-item\">\n\t\t\t\t\t\t\tHydrafacial MD\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li class=\"list-group-item\">\n\t\t\t\t\t\t\tVorteq and DVA\n\t\t\t\t\t\t</li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_anchor": "pricing-tables1-i",
+          "_isUserblock": true,
+          "_cid": "tRhgVWgC5y",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
