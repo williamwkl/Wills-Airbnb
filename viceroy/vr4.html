@@ -1,356 +1,601 @@
 <!DOCTYPE html>
-<html  >
+<html lang="en">
 <head>
-  <!-- Site made with Mobirise Website Builder v5.6.11, https://mobirise.com -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v5.6.11, mobirise.com">
-  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <title>Self Check-In Guide — Viceroy Residences | WILLSTAY</title>
+  <meta name="description" content="Step-by-step self check-in guide for WILLSTAY at Viceroy Residences, BGC Taguig.">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image:src" content="assets/images/slpt1-meta.jpg">
   <meta property="og:image" content="assets/images/slpt1-meta.jpg">
-  <meta name="twitter:title" content="WILLSTAY VR Tower 4">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta property="og:title" content="Self Check-In Guide — Viceroy Residences | WILLSTAY">
   <link rel="shortcut icon" href="assets/images/screen-shot-2022-06-04-at-9.12.22-pm-128x131.png" type="image/x-icon">
-  <meta name="description" content="">
-  
-  
-  <title>WILLSTAY VR Tower 4</title>
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/parallax/jarallax.css">
-  <link rel="stylesheet" href="assets/web/assets/gdpr-plugin/gdpr-styles.css">
-  <link rel="stylesheet" href="assets/animatecss/animate.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/socicon/css/styles.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
-  
-  
-  
+
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap"></noscript>
+
+  <style>
+    :root {
+      --gold: #8B6914;
+      --gold-light: #C4973A;
+      --gold-pale: #F5EDD8;
+      --dark: #1A1A1A;
+      --text: #4A4A4A;
+      --light-bg: #FAFAF8;
+      --white: #fff;
+      --step-bg: #fff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--light-bg); overflow-x: hidden; }
+    h1,h2,h3 { font-family: 'Playfair Display', serif; color: var(--dark); }
+    img { max-width: 100%; display: block; }
+
+    /* ── NAV ── */
+    .nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.97); backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(139,105,20,0.15);
+      padding: 0 2rem; height: 64px;
+      display: flex; align-items: center; justify-content: space-between;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    }
+    .nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .nav-brand img { height: 36px; }
+    .nav-brand span { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; color: var(--gold); }
+    .nav-links { display: flex; align-items: center; gap: 1.5rem; list-style: none; }
+    .nav-links a { text-decoration: none; color: var(--dark); font-size: 0.85rem; font-weight: 500; }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-book {
+      background: var(--gold); color: white !important;
+      padding: 0.45rem 1.1rem; border-radius: 7px; font-weight: 600 !important;
+    }
+    .nav-book:hover { background: var(--gold-light) !important; }
+    .hamburger { display: none; background: none; border: none; cursor: pointer; }
+    .mobile-menu {
+      display: none; flex-direction: column;
+      position: fixed; top: 64px; left: 0; right: 0; z-index: 99;
+      background: white; border-bottom: 1px solid #eee;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { padding: 0.9rem 2rem; text-decoration: none; color: var(--dark); font-size: 0.9rem; border-bottom: 1px solid #f5f5f5; }
+    .mobile-menu a:last-child { color: var(--gold); font-weight: 700; }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative; min-height: 70vh;
+      display: flex; align-items: flex-end;
+      background-image: url('assets/images/photo-2023-03-22-14-24-28-1280x960.jpg');
+      background-size: cover; background-position: center;
+      overflow: hidden;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(15,10,3,0.88) 0%, rgba(15,10,3,0.3) 60%, transparent 100%);
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      padding: 3rem 2rem; max-width: 1100px; margin: 0 auto; width: 100%;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(255,255,255,0.12); backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.25); color: rgba(255,255,255,0.9);
+      font-size: 0.73rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+      padding: 0.35rem 0.9rem; border-radius: 20px; margin-bottom: 1rem;
+    }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); color: white; margin-bottom: 0.75rem; line-height: 1.1; }
+    .hero p { color: rgba(255,255,255,0.8); font-size: 1rem; margin-bottom: 1.75rem; }
+    .hero-btns { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .btn-waze {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: #33CCFF; color: #1A1A1A;
+      padding: 0.7rem 1.4rem; border-radius: 8px;
+      font-weight: 700; font-size: 0.85rem; text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-waze:hover { background: #00b8e6; color: #1A1A1A; transform: translateY(-1px); }
+    .btn-maps {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: white; color: #1A1A1A;
+      padding: 0.7rem 1.4rem; border-radius: 8px;
+      font-weight: 700; font-size: 0.85rem; text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-maps:hover { background: #f0f0f0; color: #1A1A1A; transform: translateY(-1px); }
+
+    /* ── PROGRESS BAR ── */
+    .progress-bar-wrap {
+      background: var(--gold); padding: 0.9rem 2rem;
+      display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+    }
+    .progress-label { color: white; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+    .progress-dots { display: flex; gap: 5px; }
+    .progress-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: rgba(255,255,255,0.35);
+    }
+    .progress-dot.active { background: white; }
+
+    /* ── STEPS SECTION ── */
+    .steps-section { padding: 60px 2rem; }
+    .steps-header { text-align: center; margin-bottom: 3.5rem; }
+    .steps-label { font-size: 0.73rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
+    .steps-title { font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 700; }
+    .steps-sub { color: #777; font-size: 0.95rem; margin-top: 0.5rem; }
+
+    .step {
+      max-width: 1100px; margin: 0 auto 3rem;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 3rem; align-items: center;
+      background: white; border-radius: 20px;
+      padding: 2.5rem; box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+      border: 1px solid #ede8de;
+    }
+    .step-img {
+      border-radius: 14px; overflow: hidden;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    }
+    .step-img img { width: 100%; height: 280px; object-fit: cover; }
+    .step-body { display: flex; flex-direction: column; gap: 0.75rem; }
+    .step-num {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--gold); color: white;
+      font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700;
+      box-shadow: 0 4px 14px rgba(139,105,20,0.35); flex-shrink: 0;
+    }
+    .step-num-row { display: flex; align-items: center; gap: 0.75rem; }
+    .step-tag { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); }
+    .step-headline { font-size: 1.3rem; font-weight: 700; color: var(--dark); font-family: 'Playfair Display', serif; }
+    .step-text { font-size: 0.93rem; line-height: 1.75; color: var(--text); }
+
+    /* final step highlight */
+    .step.final {
+      background: linear-gradient(135deg, #1A1A1A 0%, #2D200A 100%);
+      border-color: transparent;
+    }
+    .step.final .step-tag { color: var(--gold-light); }
+    .step.final .step-headline { color: white; }
+    .step.final .step-text { color: rgba(255,255,255,0.78); }
+
+    /* ── CONTACT ── */
+    .contact-section {
+      padding: 60px 2rem;
+      background: linear-gradient(140deg, #1A1208 0%, #2D200A 100%);
+      text-align: center;
+    }
+    .contact-inner { max-width: 700px; margin: 0 auto; }
+    .contact-section h2 { color: white; font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 0.75rem; }
+    .contact-section p { color: rgba(255,255,255,0.7); font-size: 0.93rem; margin-bottom: 2rem; }
+    .contact-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+    .contact-card {
+      background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 14px; padding: 1.75rem 1.25rem; text-align: center;
+    }
+    .contact-card-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+    .contact-card h4 { color: white; font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .contact-card p { color: rgba(255,255,255,0.6); font-size: 0.83rem; margin: 0 0 0.75rem; }
+    .contact-card a { color: var(--gold-light); font-weight: 700; font-size: 0.9rem; text-decoration: none; }
+    .contact-card a:hover { color: white; }
+
+    /* ── FOOTER ── */
+    footer { background: #111009; padding: 1.5rem 2rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.07); color: rgba(255,255,255,0.3); font-size: 0.78rem; }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeSlideUp {
+      from { opacity: 0; transform: translateY(36px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes popIn {
+      0%   { opacity: 0; transform: scale(0.5); }
+      70%  { transform: scale(1.15); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    @keyframes heroFade {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* hero entrance */
+    .hero-badge  { animation: heroFade 0.7s ease 0.2s both; }
+    .hero h1     { animation: heroFade 0.7s ease 0.4s both; }
+    .hero p      { animation: heroFade 0.7s ease 0.55s both; }
+    .hero-btns   { animation: heroFade 0.7s ease 0.7s both; }
+
+    /* step scroll reveal */
+    .step {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .step.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .step-num {
+      opacity: 0;
+      transform: scale(0.5);
+      transition: opacity 0.4s ease 0.25s, transform 0.4s cubic-bezier(0.34,1.56,0.64,1) 0.25s;
+    }
+    .step.visible .step-num {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .step-img img {
+      transition: transform 0.45s ease;
+    }
+    .step:hover .step-img img {
+      transform: scale(1.03);
+    }
+
+    /* ── FLOATING STEP COUNTER ── */
+    .step-counter {
+      position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%);
+      background: var(--dark); color: white;
+      padding: 0.5rem 1.25rem; border-radius: 30px;
+      font-size: 0.8rem; font-weight: 700; letter-spacing: 0.06em;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.25);
+      z-index: 200; white-space: nowrap;
+      opacity: 0; transform: translateX(-50%) translateY(20px);
+      transition: opacity 0.3s, transform 0.3s;
+      pointer-events: none;
+    }
+    .step-counter.visible {
+      opacity: 1; transform: translateX(-50%) translateY(0);
+    }
+    .step-counter-fill {
+      display: inline-block; width: 0%;
+      height: 2px; background: var(--gold-light);
+      border-radius: 2px; margin-left: 8px;
+      vertical-align: middle; transition: width 0.4s ease;
+    }
+
+    /* ── BACK TO TOP ── */
+    .back-top {
+      position: fixed; bottom: 28px; right: 24px; z-index: 200;
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--gold); color: white; border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 6px 20px rgba(139,105,20,0.4);
+      opacity: 0; transform: translateY(16px);
+      transition: opacity 0.3s, transform 0.3s, background 0.2s;
+    }
+    .back-top.visible { opacity: 1; transform: translateY(0); }
+    .back-top:hover { background: var(--gold-light); }
+
+    /* ── LIGHTBOX ── */
+    .lightbox {
+      position: fixed; inset: 0; z-index: 1000;
+      background: rgba(0,0,0,0.92);
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.3s;
+    }
+    .lightbox.open { opacity: 1; pointer-events: all; }
+    .lightbox img {
+      max-width: 92vw; max-height: 88vh;
+      border-radius: 12px;
+      transform: scale(0.9);
+      transition: transform 0.3s ease;
+      box-shadow: 0 24px 60px rgba(0,0,0,0.5);
+    }
+    .lightbox.open img { transform: scale(1); }
+    .lightbox-close {
+      position: absolute; top: 20px; right: 20px;
+      width: 40px; height: 40px; border-radius: 50%;
+      background: rgba(255,255,255,0.15); border: none; cursor: pointer;
+      color: white; font-size: 1.2rem;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s;
+    }
+    .lightbox-close:hover { background: rgba(255,255,255,0.3); }
+    .step-img { cursor: zoom-in; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .step { grid-template-columns: 1fr; gap: 1.5rem; padding: 1.75rem; }
+      .step .step-img { order: -1; }
+      .step-img img { height: 220px; }
+      .contact-cards { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
-  
-  <section data-bs-version="5.1" class="menu menu1 cid-tww5WoYn4O" once="menu" id="menu1-21">
-    
 
-    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
-        <div class="container-fluid">
-            <div class="navbar-brand">
-                <span class="navbar-logo">
-                    
-                        <img src="assets/images/screen-shot-2022-06-04-at-9.12.22-pm-128x131.png" alt="WILLSTAY - Your Perfect Second Home" style="height: 3rem;">
-                    
-                </span>
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-primary display-7" href="index.html">WILLSTAY</a></span>
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-primary display-4" href="slpt1.html#header7-22" aria-expanded="false"><span class="mobi-mbri mobi-mbri-map-pin mbr-iconfont mbr-iconfont-btn"></span>
-                            Directions</a></li><li class="nav-item"><a class="nav-link link text-primary display-4" href="sanlorenzoplace.html#features16-p" aria-expanded="false"><span class="mobi-mbri mobi-mbri-touch mbr-iconfont mbr-iconfont-btn"></span>Self Checkin</a></li><li class="nav-item"><a class="nav-link link text-primary display-4" href="slpt1.html#contacts1-2d"><span class="mobi-mbri mobi-mbri-phone mbr-iconfont mbr-iconfont-btn"></span>Contact Me</a></li></ul>
-                
-                <div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="http://www.airbnb.com/p/willstay" target="_blank"><span class="mobi-mbri mobi-mbri-user-2 mbr-iconfont mbr-iconfont-btn"></span>
-                        AirBnb Profile</a></div>
-            </div>
-        </div>
-    </nav>
+<!-- NAV -->
+<nav class="nav">
+  <a href="../index.html" class="nav-brand">
+    <img src="assets/images/screen-shot-2022-06-04-at-9.12.22-pm-128x131.png" alt="WILLSTAY logo">
+    <span>WILLSTAY</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#directions">Directions</a></li>
+    <li><a href="#steps">Check-In Steps</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="https://www.airbnb.com/users/50371312/listings" target="_blank" class="nav-book">Airbnb Profile</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <svg width="24" height="24" fill="none" stroke="#1A1A1A" stroke-width="2.2" viewBox="0 0 24 24">
+      <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+    </svg>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#directions">Directions</a>
+  <a href="#steps">Check-In Steps</a>
+  <a href="#contact">Contact</a>
+  <a href="https://www.airbnb.com/users/50371312/listings" target="_blank">Airbnb Profile →</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="directions">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">📍 BGC Taguig · Viceroy Residences</div>
+    <h1>Welcome to Your Stay!</h1>
+    <p>Thanks for booking. Use the directions below to find us, then follow the step-by-step guide to check in.</p>
+    <div class="hero-btns">
+      <a href="https://waze.com/ul/hwdw4dt9gm" target="_blank" class="btn-waze">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="#1A1A1A"><circle cx="12" cy="12" r="10"/><path fill="white" d="M12 6a6 6 0 016 6c0 2.5-1.5 4.7-3.8 5.6l-.2.1V19h-4v-1.3l-.2-.1A6 6 0 0112 6zm1 9.8V17h-2v-1.2A4 4 0 018 12a4 4 0 018 0 4 4 0 01-3 3.8z"/></svg>
+        Directions by Waze
+      </a>
+      <a href="https://goo.gl/maps/VMrGxap7nDiN39eu7" target="_blank" class="btn-maps">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#EA4335"/><circle cx="12" cy="9" r="2.5" fill="white"/></svg>
+        Directions by Google
+      </a>
+    </div>
+  </div>
 </section>
 
-<section data-bs-version="5.1" class="header7 cid-tww5WpBn2j mbr-parallax-background" id="header7-22">
+<!-- PROGRESS -->
+<div class="progress-bar-wrap">
+  <span class="progress-label">6 Steps to Your Room</span>
+  <div class="progress-dots">
+    <div class="progress-dot active"></div>
+    <div class="progress-dot active"></div>
+    <div class="progress-dot active"></div>
+    <div class="progress-dot"></div>
+    <div class="progress-dot"></div>
+    <div class="progress-dot"></div>
+  </div>
+</div>
 
-    
+<!-- STEPS -->
+<section class="steps-section" id="steps">
+  <div class="steps-header">
+    <div class="steps-label">Self Check-In Guide</div>
+    <h2 class="steps-title">Let's Check In Together!</h2>
+    <p class="steps-sub">Follow these steps and you'll be in your room in no time.</p>
+  </div>
 
-    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(35, 35, 35);"></div>
-
-    <div class="text-right container">
-        <div class="row justify-content-end">
-            <div class="col-12 col-lg-5">
-                <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong>Viceroy Residences&nbsp;</strong></h1>
-                
-                <p class="mbr-text mbr-fonts-style display-7">
-                    Welcome! Thanks for booking my place.</p>
-                <div class="mbr-section-btn mt-3"><a class="btn btn-primary display-4" href="https://waze.com/ul/hwdw4dt9gm" target="_blank">Directions by Waze</a> <a class="btn btn-primary display-4" href="https://goo.gl/maps/VMrGxap7nDiN39eu7" target="_blank">Directions by Google</a></div>
-            </div>
-        </div>
+  <!-- Step 1 -->
+  <div class="step">
+    <div class="step-body">
+      <div class="step-num-row">
+        <div class="step-num">1</div>
+        <span class="step-tag">Find the Building</span>
+      </div>
+      <div class="step-headline">Arrive at Viceroy Residences</div>
+      <p class="step-text">Once you reach the area, look for <strong>Viceroy Residences</strong> in BGC, Taguig. The building is clearly marked — you're in the right place!</p>
     </div>
+    <div class="step-img">
+      <img src="assets/images/photo-2023-03-22-14-22-32-1280x960.jpg" alt="Viceroy Residences building">
+    </div>
+  </div>
+
+  <!-- Step 2 -->
+  <div class="step">
+    <div class="step-img">
+      <img src="assets/images/photo-2023-03-22-14-23-14-956x717.jpg" alt="Viceroy Residences lobby">
+    </div>
+    <div class="step-body">
+      <div class="step-num-row">
+        <div class="step-num">2</div>
+        <span class="step-tag">At the Lobby</span>
+      </div>
+      <div class="step-headline">Go In to the Lobby</div>
+      <p class="step-text">Head to the lobby and approach the concierge to log in. For everyone's safety and security, please <strong>prepare a valid ID</strong> to be documented by the reception. Thank you for your cooperation.</p>
+    </div>
+  </div>
+
+  <!-- Step 3 -->
+  <div class="step">
+    <div class="step-body">
+      <div class="step-num-row">
+        <div class="step-num">3</div>
+        <span class="step-tag">Find the Elevator</span>
+      </div>
+      <div class="step-headline">Head to Tower 4 Elevator</div>
+      <p class="step-text">Once checked in at the lobby, head to the elevator on your left toward <strong>Tower 4</strong>. You're almost there!</p>
+    </div>
+    <div class="step-img">
+      <img src="assets/images/photo-2023-03-22-14-23-17-956x717.jpg" alt="Tower 4 elevator area">
+    </div>
+  </div>
+
+  <!-- Step 4 -->
+  <div class="step">
+    <div class="step-img">
+      <img src="assets/images/photo-2023-03-22-14-23-21-956x717.jpg" alt="Mailbox room">
+    </div>
+    <div class="step-body">
+      <div class="step-num-row">
+        <div class="step-num">4</div>
+        <span class="step-tag">Going Up</span>
+      </div>
+      <div class="step-headline">Pass the Mailbox Room</div>
+      <p class="step-text">You will pass the mailbox room on your way through the building. Keep walking — the elevator is just ahead!</p>
+    </div>
+  </div>
+
+  <!-- Step 5 -->
+  <div class="step">
+    <div class="step-body">
+      <div class="step-num-row">
+        <div class="step-num">5</div>
+        <span class="step-tag">16th Floor</span>
+      </div>
+      <div class="step-headline">Take the Elevator to Floor 16</div>
+      <p class="step-text">Step into the elevator and press <strong>16</strong>. Once you arrive on the 16th floor, take a <strong>right down the hallway</strong> to reach your unit.</p>
+    </div>
+    <div class="step-img">
+      <img src="assets/images/photo-2023-03-22-14-23-24-956x717.jpg" alt="Elevator to 16th floor">
+    </div>
+  </div>
+
+  <!-- Step 6 — Final -->
+  <div class="step final">
+    <div class="step-body">
+      <div class="step-num-row">
+        <div class="step-num">6</div>
+        <span class="step-tag">You Made It!</span>
+      </div>
+      <div class="step-headline">You Are All Set!</div>
+      <p class="step-text">The door will be <strong>unlocked</strong> for you already, and the keys will be on the bedside table. Welcome to our home — we hope you have a wonderful and relaxing stay! If you need anything at all, don't hesitate to message us through Airbnb. Thank you again for choosing WILLSTAY.</p>
+    </div>
+    <div class="step-img">
+      <img src="assets/images/screen-shot-2022-05-28-at-6.01.49-pm-1252x932.png" alt="Your WILLSTAY unit">
+    </div>
+  </div>
+
 </section>
 
-<section data-bs-version="5.1" class="features15 cid-tww5WpXfHA" id="features16-23">
-
-    
-
-    
-    <div class="container-fluid">
-        <div class="content-wrapper">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg">
-                    <div class="text-wrapper">
-                        <h6 class="card-title mbr-fonts-style display-2">
-                            <strong>Let's CHECK IN together!</strong></h6>
-                        <p class="mbr-text mbr-fonts-style mb-4 display-4">
-                            Once you reach the place, you should see the Viceroy Residences&nbsp;</p>
-                        
-                    </div>
-                </div>
-                <div class="col-12 col-lg-5">
-                    <div class="image-wrapper">
-                        <img src="assets/images/photo-2023-03-22-14-22-32-1280x960.jpg" alt="San Lorenzo Place">
-                    </div>
-                </div>
-            </div>
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="contact-inner">
+    <div class="steps-label" style="color:var(--gold-light)">Get in Touch</div>
+    <h2>Need Anything?</h2>
+    <p>Don't be shy — if you need anything during your stay, just reach out through Airbnb messages or give us a call. We're always happy to help.</p>
+    <div class="contact-cards">
+      <div class="contact-card">
+        <div class="contact-card-icon">
+          <svg width="32" height="32" fill="none" stroke="var(--gold-light)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
         </div>
+        <h4>Airbnb Message</h4>
+        <p>We'll reply as soon as possible</p>
+        <a href="https://www.airbnb.com/users/show/50371312" target="_blank">Message on Airbnb →</a>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-icon">
+          <svg width="32" height="32" fill="none" stroke="var(--gold-light)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        </div>
+        <h4>Mobile</h4>
+        <p>Call or message anytime!</p>
+        <a href="tel:+639177916855">+63 917 791 6855</a>
+      </div>
     </div>
+  </div>
 </section>
 
-<section data-bs-version="5.1" class="features16 cid-tww5Wqh5WO" id="features17-24">
-    
+<footer>© 2026 WILLSTAY. All rights reserved. · Made with ♥ in Manila</footer>
 
-    
-    <div class="container">
-        <div class="content-wrapper">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-5">
-                    <div class="image-wrapper">
-                        <img src="assets/images/photo-2023-03-22-14-23-14-956x717.jpg" alt="San Lorenzo Entrance">
-                    </div>
-                </div>
-                <div class="col-12 col-lg">
-                    <div class="text-wrapper">
-                        <h6 class="card-title mbr-fonts-style display-5">
-                            <strong>Go in to the lobby</strong></h6>
-                        <p class="mbr-text mbr-fonts-style mb-4 display-4">
-                            Go in to the lobby to the concierge to log in. For everyone's safety, and security, please prepare your ID to be documented by the reception. Thank you for your cooperation.</p>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightbox-close">
+    <svg width="18" height="18" fill="none" stroke="white" stroke-width="2.5" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <img id="lightbox-img" src="" alt="Step photo">
+</div>
 
-<section data-bs-version="5.1" class="features15 cid-tww5WqALLX" id="features16-25">
+<!-- FLOATING STEP COUNTER -->
+<div class="step-counter" id="step-counter">
+  STEP <span id="step-current">1</span> OF 6
+  <span class="step-counter-fill" id="step-fill"></span>
+</div>
 
-    
+<!-- BACK TO TOP -->
+<button class="back-top" id="back-top" aria-label="Back to top">
+  <svg width="18" height="18" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
 
-    
-    <div class="container">
-        <div class="content-wrapper">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg">
-                    <div class="text-wrapper">
-                        
-                        <p class="mbr-text mbr-fonts-style mb-4 display-4">Once you're ready, head to the elevator on your left to Tower 4, 16th floor</p>
-                        
-                    </div>
-                </div>
-                <div class="col-12 col-lg-5">
-                    <div class="image-wrapper">
-                        <img src="assets/images/photo-2023-03-22-14-23-17-956x717.jpg" alt="San Lorenzo Place Entrance">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<script>
+  // Mobile menu
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  hamburger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.remove('open')));
 
-<section data-bs-version="5.1" class="features16 cid-tww5WqV1IU" id="features17-26">
-    
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    });
+  });
 
-    
-    <div class="container">
-        <div class="content-wrapper">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-5">
-                    <div class="image-wrapper">
-                        <img src="assets/images/photo-2023-03-22-14-23-21-956x717.jpg" alt="Mobirise">
-                    </div>
-                </div>
-                <div class="col-12 col-lg">
-                    <div class="text-wrapper">
-                        
-                        <p class="mbr-text mbr-fonts-style mb-4 display-4">
-                            You will pass the mailbox room.</p>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+  // ── SCROLL REVEAL for step cards ──
+  const steps = document.querySelectorAll('.step');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.1 });
+  steps.forEach(s => revealObserver.observe(s));
 
-<section data-bs-version="5.1" class="features15 cid-tww5Wrezn3" id="features16-27">
+  // ── FLOATING STEP COUNTER ──
+  const counter = document.getElementById('step-counter');
+  const stepCurrentEl = document.getElementById('step-current');
+  const stepFill = document.getElementById('step-fill');
+  const backTop = document.getElementById('back-top');
+  const stepsSection = document.getElementById('steps');
 
-    
+  const stepObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const idx = Array.from(steps).indexOf(entry.target) + 1;
+        stepCurrentEl.textContent = idx;
+        stepFill.style.width = (idx / steps.length * 56) + 'px';
+      }
+    });
+  }, { threshold: 0.5 });
+  steps.forEach(s => stepObserver.observe(s));
 
-    
-    <div class="container">
-        <div class="content-wrapper">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg">
-                    <div class="text-wrapper">
-                        
-                        <p class="mbr-text mbr-fonts-style mb-4 display-4">
-                            Here is the elevator. Go to the 16th floor and take a right down the hallway to your unit.</p>
-                        
-                    </div>
-                </div>
-                <div class="col-12 col-lg-5">
-                    <div class="image-wrapper">
-                        <img src="assets/images/photo-2023-03-22-14-23-24-956x717.jpg" alt="Mobirise">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+  // ── DYNAMIC PROGRESS DOTS ──
+  const dots = document.querySelectorAll('.progress-dot');
+  const dotObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const idx = Array.from(steps).indexOf(entry.target);
+        dots.forEach((d, i) => d.classList.toggle('active', i <= idx));
+      }
+    });
+  }, { threshold: 0.5 });
+  steps.forEach(s => dotObserver.observe(s));
 
-<section data-bs-version="5.1" class="features16 cid-tww5Wsdzaq" id="features17-2a">
-    
+  // ── SHOW/HIDE on scroll ──
+  window.addEventListener('scroll', () => {
+    const inSteps = window.scrollY > stepsSection.offsetTop - 200;
+    counter.classList.toggle('visible', inSteps);
+    backTop.classList.toggle('visible', window.scrollY > 600);
+  }, { passive: true });
 
-    
-    <div class="container">
-        <div class="content-wrapper">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-5">
-                    <div class="image-wrapper">
-                        <img src="assets/images/screen-shot-2022-05-28-at-6.01.49-pm-1252x932.png" alt="Mobirise">
-                    </div>
-                </div>
-                <div class="col-12 col-lg">
-                    <div class="text-wrapper">
-                        <h6 class="card-title mbr-fonts-style display-2"><strong>You are all set!</strong></h6>
-                        <p class="mbr-text mbr-fonts-style mb-4 display-4">
-                            Door will be unlocked already for you and keys will be on the bedside table. Welcome to our home and we hope you enjoy and have a relaxing stay. If you need anything, do not hesitate to message me. Thank you again for choosing my place and we can make this stay memorable for you.</p>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+  backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-<section data-bs-version="5.1" class="features1 cid-tww5WsPxe4" id="features1-2c">
-    
+  // ── LIGHTBOX ──
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxClose = document.getElementById('lightbox-close');
 
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-9">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
-                    <strong>Need Anything?</strong></h3>
-                <h5 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2 display-7">Don't be shy! Feel free to message me thru AirBnb if you need any these services.</h5>
-            </div>
-        </div>
-        <div class="row">
-            <div class="card col-12 col-md-6 col-lg-3">
-                <div class="card-wrapper">
-                    <div class="card-box align-center">
-                        <div class="iconfont-wrapper">
-                            <span class="mbr-iconfont mobi-mbri-phone mobi-mbri"></span>
-                        </div>
-                        <h5 class="card-title mbr-fonts-style display-7"><strong>Buy SIM LOAD</strong></h5>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="card col-12 col-md-6 col-lg-3">
-                <div class="card-wrapper">
-                    <div class="card-box align-center">
-                        <div class="iconfont-wrapper">
-                            <span class="mbr-iconfont mobi-mbri-touch mobi-mbri"></span>
-                        </div>
-                        <h5 class="card-title mbr-fonts-style display-7"><strong>Massage 24/7</strong></h5>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="card col-12 col-md-6 col-lg-3">
-                <div class="card-wrapper">
-                    <div class="card-box align-center">
-                        <div class="iconfont-wrapper">
-                            <span class="mbr-iconfont mobi-mbri-gift mobi-mbri"></span>
-                        </div>
-                        <h5 class="card-title mbr-fonts-style display-7"><strong>Food Delivery</strong></h5>
-                        
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
+  document.querySelectorAll('.step-img img').forEach(img => {
+    img.addEventListener('click', () => {
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+      lightbox.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+  });
 
-<section data-bs-version="5.1" class="contacts1 cid-tww5WtfWXU mbr-parallax-background" id="contacts1-2d">
-
-    
-
-    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(187, 187, 187);">
-    </div>
-    <div class="container">
-        <div class="mbr-section-head">
-            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
-                <strong>Reach Your Host!</strong></h3>
-            
-        </div>
-        <div class="row justify-content-center mt-4">
-            <div class="card col-12 col-lg-6">
-                <div class="card-wrapper">
-                    <div class="card-box align-center">
-                        <div class="image-wrapper">
-                            <span class="mbr-iconfont mobi-mbri-letter mobi-mbri"></span>
-                        </div>
-                        <h4 class="card-title mbr-fonts-style mb-2 display-2">
-                            <strong>AirBnb</strong></h4>
-                        <p class="mbr-text mbr-fonts-style mb-2 display-4">
-                            We will reply as soon as possible</p>
-                        <h5 class="link mbr-fonts-style display-7">&nbsp;</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="card col-12 col-lg-6">
-                <div class="card-wrapper">
-                    <div class="card-box align-center">
-                        <div class="image-wrapper">
-                            <span class="mbr-iconfont mobi-mbri-devices mobi-mbri"></span>
-                        </div>
-                        <h4 class="card-title mbr-fonts-style align-center mb-2 display-2">
-                            <strong>Mobile</strong></h4>
-                        <p class="mbr-text mbr-fonts-style mb-2 display-4">
-                            Call or message anytime!</p>
-                        <h5 class="link mbr-black mbr-fonts-style display-7">
-                            <a href="tel:+639177916855" class="text-primary">Call +63917.791.6855</a></h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 0;"><a href="https://mobiri.se/5876227" style="flex: 1 1;height: 0rem;position: absolute;width: 100%;z-index: 1;"></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/offline-website-1builder.html"></a></section>
-
-
-
-<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  
-<script src="assets/parallax/jarallax.js"></script>  
-<script src="assets/web/assets/cookies-alert-plugin/cookies-alert-core.js"></script>  
-<script src="assets/web/assets/cookies-alert-plugin/cookies-alert-script.js"></script>  
-<script src="assets/smoothscroll/smooth-scroll.js"></script>  
-<script src="assets/ytplayer/index.js"></script>  
-<script src="assets/dropdown/js/navbar-dropdown.js"></script>  
-<script src="assets/theme/js/script.js"></script>  
-  
-  
-<input name="cookieData" type="hidden" data-cookie-customDialogSelector='null' data-cookie-colorText='#424a4d' data-cookie-colorBg='rgba(255, 255, 255, 0.99)' data-cookie-textButton='Agree' data-cookie-colorButton='' data-cookie-colorLink='#424a4d' data-cookie-underlineLink='false' data-cookie-text="We use cookies to give you the best experience. Read our <a href='privacy.html'>cookie policy</a>.">
-   <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
-    <input name="animation" type="hidden">
-  </body>
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+</script>
+</body>
 </html>
